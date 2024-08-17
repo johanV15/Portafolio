@@ -1,0 +1,71 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import Badge from "../components/Badge.astro";
+import GitHubIcon from "../components/icons/GitHub.astro";
+import LinkedinIcon from "../components/icons/Linkedin.astro";
+import SocialPill from "../components/SocialPill.astro";
+import CorreoIcon from "../components/icons/Correo.astro"
+import TelefonoIcon from "../components/icons/Telefono.astro"
+---
+
+<Layout title="Welcome to Astro.">
+  <main>
+    <section class="container mx-auto py-44 flex justify-between items-center">
+      <div class="w-1/2 pr-8">
+        <h1 class="text-white text-5xl font-bold flex flex-row gap-x-3 pb-10">
+          <span class="text-cyan-300">Johan </span>Ventura
+        </h1>
+        <h2 class="text-xl pb-4">
+          <span class="opacity-80"
+            >Desarrollador de Software con conocimientos en lenguajes de
+            programación cómo
+          </span><span class="text-cyan-300 bg-opacity-"
+            >Java, PHP y JavaScript,</span
+          >
+          <span class="opacity-80"
+            >he realizado proyectos donde he aplicado diversas tecnologías tanto
+            Frontend como Backend.</span
+          >
+        </h2>
+        <h2 class="text-xl pb-4">
+          <span class="opacity-80">Me considero una persona </span>
+          <span class="text-cyan-300"
+            >creativa, organizada y con gran capacidad para trabajar en equipo,
+          </span>
+          <span class="opacity-80">
+            procuro estar actualizado con las últimas tendencias tecnológicas.</span
+          >
+        </h2>
+        <nav class="flex gap-x-2">
+          <SocialPill href="https://www.linkedin.com/in/johan-ventura/">
+            <LinkedinIcon class="w-6 h-6" />
+            Linkedin
+          </SocialPill>
+		  <SocialPill href="https://github.com/johanV15">
+            <GitHubIcon class="w-6 h-6" />
+            GitHub
+          </SocialPill>
+		  <SocialPill>
+            <CorreoIcon class="w-6 h-6" />
+            johanventura15@gmail.com
+          </SocialPill>
+		  <SocialPill>
+            <TelefonoIcon class="w-6 h-6" />
+            +573507466623
+          </SocialPill>
+        </nav>
+      </div>
+
+      <div class="w-1/2 flex justify-center">
+        <img
+          class="rounded-full w-[400px] h-[400px]"
+          src="/foto.jpg"
+          alt="foto"
+        />
+      </div>
+    </section>
+  </main>
+</Layout>
+
+<style></style>
